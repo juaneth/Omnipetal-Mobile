@@ -6,7 +6,7 @@ function withOpacity(cssVariable) {
 }
 
 module.exports = {
-    content: ['./web-assets/**.{html,js}'],
+    content: ['./web-assets/**/*.{html,js}'],
     theme: {
         extend: {},
         colors: {
