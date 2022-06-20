@@ -1,0 +1,6 @@
+{
+	"appId": "xyz.juaneth.app",
+	"appName": "omnipetal-mobile",
+	"webDir": "web-assets/",
+	"bundledWebRuntime": false
+}
