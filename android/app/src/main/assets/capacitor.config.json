@@ -2,5 +2,8 @@
 	"appId": "xyz.juaneth.app",
 	"appName": "omnipetal-mobile",
 	"webDir": "web-assets/",
-	"bundledWebRuntime": false
+	"bundledWebRuntime": false,
+	"android": {
+		"backgroundColor": "#374151"
+	}
 }
