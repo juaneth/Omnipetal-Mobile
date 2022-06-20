@@ -7,23 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omnipetal</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="./dist/output.css" rel="stylesheet">
     <link href="./index.css" rel="stylesheet">
     <script src="./capacitor.js"></script>
 </head>
 
-<body class="font-['Montserrat'] bg-background">
+<body class="bg-background transition-all fade-in">
     <div class="p-3 flex flex-row bg-panel shadow-lg h-16 items-center">
         <img src="./icon.png" alt="Icon" class="h-10 w-10">
 
         <div class="flex-grow"></div>
 
-        <button id="menu" class="bg-darker shadow-xl text-textSecondary h-[42px] w-[42px] active:bg-background active:text-textPrimary p-1 rounded-md text-sm font-medium transition-all">
+        <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="bg-darker shadow-xl text-textSecondary h-[42px] w-[42px] active:bg-background active:text-textPrimary p-1 rounded-md text-sm font-medium transition-all">
             <span class="text-[26pt] material-symbols-outlined">
                 menu
             </span>
         </button>
+
+        <div id="dropdown" class="z-10 hidden bg-darker divide-y divide-gray-100 rounded shadow w-44 m-4 dark:bg-gray-700">
+            <ul class="py-1 transition-all text-sm text-textSecondary dark:text-gray-200" aria-labelledby="dropdownDefault">
+                <li>
+                    <a href="./index.html" class="block border-b border-borderGray px-4 py-2 active:bg-background dark:hover:bg-gray-600 dark:hover:text-white">Home</a>
+                    <a href="./servers/index.html" class="block border-b border-borderGray px-4 py-2 active:bg-background dark:hover:bg-gray-600 dark:hover:text-white">Servers</a>
+                    <a href="./servers/addServer.html" class="block border-b border-borderGray px-4 py-2 active:bg-background dark:hover:bg-gray-600 dark:hover:text-white">Add a Server</a>
+                    <a href="./settings.html" class="block px-4 py-2 active:bg-background dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <div class=" m-3 flex justify-center ">
@@ -37,6 +50,9 @@
             </div>
         </div>
     </div>
+
+    <script src="./back.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
 </body>
 
 </html>

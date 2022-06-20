@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omnipetal</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="../dist/output.css" rel="stylesheet">
     <link href="../index.css" rel="stylesheet">
@@ -32,29 +30,22 @@
                 <li>
                     <a href="../index.html" class="block border-b border-borderGray px-4 py-2 active:bg-background dark:hover:bg-gray-600 dark:hover:text-white">Home</a>
                     <a href="../servers/index.html" class="block border-b border-borderGray px-4 py-2 active:bg-background dark:hover:bg-gray-600 dark:hover:text-white">Servers</a>
-                    <a href="../servers/addServer.html" class="block border-b border-borderGray px-4 py-2 active:bg-background dark:hover:bg-gray-600 dark:hover:text-white">Add a Server</a>
+                    <a href="../servers/" class="block border-b border-borderGray px-4 py-2 active:bg-background dark:hover:bg-gray-600 dark:hover:text-white">Add a Server</a>
                     <a href="../settings.html" class="block px-4 py-2 active:bg-background dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
                 </li>
             </ul>
         </div>
     </div>
-
     <div class=" m-3 flex justify-center ">
         <div class="p-4 bg-panel rounded-lg grid justify-center shadow-lg text-center ">
-            <h1 class="text-textPrimary text-xl font-bold">Servers</h1>
+            <h2 class="text-textPrimary text-lg ">Add a server</h2>
+            <h2 class="text-textHint text-sm my-2 ">Details would be given inside of the Omnipetal Daemon</h2>
 
-            <div class="bg-background p-4 rounded-lg m-2 items-center flex flex-row space-x-4">
-                <img id="server-icon" src="../icon.png" alt="" class="rounded-xl bg-darker w-44 shadow-lg">
-                <div class="px-3">
-                    <h2 class="text-textPrimary font-semibold text-lg" id="server-title">Server Title</h2>
-                    <div class="mt-3">
-                        <h2 id="server-ip" class="text-textSecondary font-light">Server IP</h2>
-                        <h2 id="server-port" class="text-textSecondary font-light">Server Port</h2>
-                    </div>
+            <input type="text " placeholder="Daemon IP " class="p-2 m-3 bg-background rounded-lg text-center text-textSecondary ">
 
-                    <button class="bg-panel bg-backgroundPrimary text-sm font-semibold px-4 py-3 border border-borderPrimary transition-all rounded shadow-lg shadow-shadowPrimary/50 mt-3 text-textPrimary">Edit/View</button>
-                </div>
-            </div>
+            <input type="text " placeholder="Daemon Port " class="p-2 m-3 bg-background rounded-lg text-center text-textSecondary ">
+
+            <input type="text " placeholder="Daemon Passkey " class="p-2 m-3 bg-background rounded-lg text-center text-textSecondary ">
         </div>
     </div>
 

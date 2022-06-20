@@ -84,4 +84,15 @@
 
 body {
     -webkit-tap-highlight-color: transparent;
+    font-family: Montserrat;
+    animation: fadeIn 0.1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
