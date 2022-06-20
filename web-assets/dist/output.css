@@ -558,6 +558,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -619,6 +623,10 @@ video {
   height: 6rem;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -633,6 +641,18 @@ video {
 
 .w-48 {
   width: 12rem;
+}
+
+.w-2\/6 {
+  width: 33.333333%;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.w-32 {
+  width: 8rem;
 }
 
 .flex-grow {
@@ -941,8 +961,6 @@ video {
 body {
   -webkit-tap-highlight-color: transparent;
   font-family: Montserrat;
-  -webkit-animation: fadeIn 0.1s;
-          animation: fadeIn 0.1s;
 }
 
 @-webkit-keyframes fadeIn {

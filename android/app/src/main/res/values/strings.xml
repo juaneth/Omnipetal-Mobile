@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">omnipetal-mobile</string>
-    <string name="title_activity_main">omnipetal-mobile</string>
+    <string name="app_name">Omnipetal</string>
+    <string name="title_activity_main">Omnipetal</string>
     <string name="package_name">xyz.juaneth.app</string>
     <string name="custom_url_scheme">xyz.juaneth.app</string>
 </resources>
